@@ -1,0 +1,15 @@
+div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  background-color: rgba(245, 65, 140, 0.877);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-top: 3rem;
+}
+
+p {
+  margin: 0;
+}
