@@ -1,5 +1,6 @@
 div {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
@@ -13,3 +14,7 @@ div {
 p {
   margin: 0;
 }
+
+/* .new-color {
+  background-color: rgba(27, 247, 192, 0.774);
+} */

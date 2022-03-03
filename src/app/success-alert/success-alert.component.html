@@ -1,5 +1,7 @@
 <div>
-  <p>
+  <p [style]="colorsChange">
     Success {{ getName() }} is dancing!
   </p>
+  <hr>
+  <button (click)="onCreateDance()" [innerText]="dance"></button>
 </div>

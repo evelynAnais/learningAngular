@@ -7,12 +7,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SuccessAlertComponent implements OnInit {
   name: string = 'Bob';
+  colorsChange: string = 'background-color: purple';
+  dance: string = 'dancing';
 
   getName(): string {
     return this.name;
   }
 
-  constructor() { }
+  constructor() {
+    setTimeout((): void => {
+      this.colorsChange = "background-color: white";
+    }, 1000)
+}
+
+onCreateDance(): void {
+  this.dance = "dance";
+}
 
   ngOnInit(): void {
   }
