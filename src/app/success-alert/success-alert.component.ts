@@ -22,6 +22,7 @@ export class SuccessAlertComponent implements OnInit {
 
 onCreateDance(): void {
   this.dance = "dance";
+  this.colorsChange = "background-color: purple";
 }
 
   ngOnInit(): void {
