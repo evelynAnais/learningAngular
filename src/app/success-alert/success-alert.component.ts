@@ -9,6 +9,7 @@ export class SuccessAlertComponent implements OnInit {
   name: string = 'Bob';
   colorsChange: string = 'background-color: purple';
   dance: string = 'dancing';
+  answer: string = '';
 
   getName(): string {
     return this.name;
@@ -23,6 +24,11 @@ export class SuccessAlertComponent implements OnInit {
 onCreateDance(): void {
   this.dance = "dance";
   this.colorsChange = "background-color: purple";
+}
+
+onUpdateAnswer(event: Event): void {
+  console.log(event);
+  this.answer = (<HTMLInputElement>event.target).value;
 }
 
   ngOnInit(): void {

@@ -3,5 +3,8 @@
     Success {{ getName() }} is dancing!
   </p>
   <hr>
+  <label for="danz">Danz</label>
+  <input type="text" class="form-control" (input)="onUpdateAnswer($event)">
   <button (click)="onCreateDance()" [innerText]="dance"></button>
+  <p>{{ answer }}</p>
 </div>
