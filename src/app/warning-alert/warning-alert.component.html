@@ -1,4 +1,4 @@
-<div>
-  <p>Warning!!</p>
-  <p>Please begin dancing {{ times }} hours!</p>
+<div [ngStyle]="{backgroundColor: getColor()}">
+  <p [ngClass]="{white: status === 'Ahora'}">Warning!!</p>
+  <p>Please begin dancing {{ times }} hours! {{ getStatus() }}</p>
 </div>
