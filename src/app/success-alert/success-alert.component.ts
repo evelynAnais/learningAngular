@@ -11,10 +11,7 @@ export class SuccessAlertComponent implements OnInit {
   dance: string = '';
   answer: string = '';
   yourName: string = '';
-
-  getName(): string {
-    return this.name;
-  }
+  reset: string = '';
 
   constructor() {
     setTimeout((): void => {
@@ -23,11 +20,16 @@ export class SuccessAlertComponent implements OnInit {
 }
 
 onCreateDance(): void {
-    this.dance = " Because " + this.answer;
-    this.colorsChange = "background-color: white";
-    this.yourName = this.name + " is dancing";
-
+  this.dance = " Because " + this.answer;
+  this.colorsChange = "background-color: white";
+  this.yourName = this.name + " is dancing";
+  this.getReset();
 }
+
+getReset(): void {
+    this.answer = '';
+    this.name = '';
+  }
 
 onUpdateAnswer(event: Event): void {
   console.log(event);
