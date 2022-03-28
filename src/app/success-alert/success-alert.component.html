@@ -13,10 +13,10 @@
     <!-- <p>{{ answer }}</p> -->
   </div>
   <div *ngIf="submitted; else notDancing" class="blue">
-    <p [style]="colorsChange" [innerText]="yourName + dance"></p>
+    <p  [style]="colorsChange" [innerText]="yourName + dance"></p>
   </div>
   <ng-template #notDancing>
-    <pm-warning-alert></pm-warning-alert>
+    <pm-warning-alert *ngFor="let a of add"></pm-warning-alert>
   </ng-template>
 </section>
 

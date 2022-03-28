@@ -13,15 +13,17 @@ export class SuccessAlertComponent implements OnInit {
   yourName: string = '';
   reset: string = '';
   submitted = false;
+  add = ['']
 
   constructor() {
     setTimeout((): void => {
-      this.colorsChange = "background-color: white";
-    }, 10)
+      this.add.push(this.name)
+    }, 10000)
 }
 
 onCreateDance(): void {
   this.submitted = true;
+  this.add.push(this.answer)
   this.dance = " Because " + this.answer;
   this.colorsChange = "background-color: white";
   this.yourName = this.name + " is dancing";

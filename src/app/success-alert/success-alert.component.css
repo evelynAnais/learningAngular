@@ -1,5 +1,6 @@
 section {
   display: flex;
+  display: inline-flex;
 }
 
 div {
@@ -33,6 +34,7 @@ p {
 .form-control {
   width: 50%;
 }
+
 /* .new-color {
   background-color: rgba(27, 247, 192, 0.774);
 } */
