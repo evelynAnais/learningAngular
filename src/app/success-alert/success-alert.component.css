@@ -1,4 +1,8 @@
-div {
+section {
+  display: flex;
+}
+
+.pink {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,10 +15,26 @@ div {
   margin-top: 3rem;
 }
 
+.blue {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: capitalize;
+  text-transform: capitalize;
+  background-color: rgba(21, 226, 226, 0.877);
+  border-radius: 50%;
+  height: 300px;
+  width: 300px;
+  margin-left: 3rem;
+}
+
 p {
   margin: 0;
 }
-
+.form-control {
+  width: 50%;
+}
 /* .new-color {
   background-color: rgba(27, 247, 192, 0.774);
 } */
