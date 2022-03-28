@@ -2,12 +2,15 @@ section {
   display: flex;
 }
 
-.pink {
+div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-transform: capitalize;
+}
+
+.pink {
   background-color: rgba(245, 65, 140, 0.877);
   border-radius: 50%;
   height: 300px;
@@ -16,21 +19,16 @@ section {
 }
 
 .blue {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-transform: capitalize;
-  text-transform: capitalize;
   background-color: rgba(21, 226, 226, 0.877);
   border-radius: 50%;
-  height: 300px;
-  width: 300px;
+  height: 200px;
+  width: 200px;
   margin-left: 3rem;
 }
 
 p {
   margin: 0;
+  width: 75%;
 }
 .form-control {
   width: 50%;
