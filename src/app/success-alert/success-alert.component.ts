@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./success-alert.component.css']
 })
 export class SuccessAlertComponent implements OnInit {
-  name: string = 'Bob';
+  name: string = '';
   colorsChange: string = 'background-color: purple';
-  dance: string = 'dancing';
+  dance: string = '';
   answer: string = '';
+  yourName: string = '';
 
   getName(): string {
     return this.name;
@@ -18,12 +19,14 @@ export class SuccessAlertComponent implements OnInit {
   constructor() {
     setTimeout((): void => {
       this.colorsChange = "background-color: white";
-    }, 1000)
+    }, 10)
 }
 
 onCreateDance(): void {
-  this.dance = "dance";
-  this.colorsChange = "background-color: purple";
+    this.dance = " Because " + this.answer;
+    this.colorsChange = "background-color: white";
+    this.yourName = this.name + " is dancing";
+
 }
 
 onUpdateAnswer(event: Event): void {
